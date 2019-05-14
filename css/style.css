@@ -1,0 +1,162 @@
+body{
+    margin:0;
+    padding:0;
+}
+.logoImg.imgWrapper {
+    width: 100px;
+    height: auto;
+}
+.logoImg.imgWrapper img{
+    width:100%;
+    height:100%;
+}
+.footer-image.imgWrapper{
+    width: 170px;
+    margin: 0 auto;
+    margin-top: -45px;
+    height: auto;
+}
+.footer-image.imgWrapper img {
+    width:100%;
+    height:100%;
+}
+.clr-primary-custom{
+    color: #1B2F4A;
+}
+.clr-warn-custom{
+    color:  rgb(236, 101, 99);
+}
+.bg-primary-custom{
+    color: white;
+    background: #1B2F4A
+}
+.text-primary-custom-light{
+    color: #4270A6
+}
+.subMenu{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.navbar.secondaryHeader .nav-item > a{
+    color: #4270A6;
+}
+.navbar.secondaryHeader .nav-item > a:hover{
+    color: #7ca5d6 ;
+}
+.navbar .nav-item.active > a{
+    color: white;
+}
+.radio-inline{
+    font-size:20px;
+}
+.mainTab ul{
+    border-bottom: 0;
+}
+.mainTab ul > .nav-item .nav-link{
+    text-align: center;
+    color: black;
+    background: #eee;
+    margin: 0 3px;
+}
+.mainTab ul > .nav-item .nav-link.active{
+    background: #1B2F4A;
+    color: white;
+}
+.mainTab .tab-content {
+    padding: 15px 0;
+}
+.themedRadio {
+    position: relative;
+    overflow: hidden;
+}
+.themedRadio input[type=radio]:checked, .themedRadio input[type=radio]{
+      position: absolute;  
+      left: -10000px;
+}
+.themedRadio input[type=checkbox]:checked, .themedRadio input[type=checkbox]{
+    position: absolute;  
+    left: -10000px;
+}
+.themedRadio label{
+    display: flex;
+    align-items: center;
+}
+.themedRadio label:hover{
+    cursor: pointer;
+    color: #4270A6;
+}
+.themedRadio input[type=radio] ~ label:before{
+    display: inline-block;
+    content: "";
+    height: 25px;
+    margin-right: 8px;
+    width: 25px;
+    background: #ddd;
+}
+.themedRadio input[type=radio]:checked ~ label:before{
+    background: rgb(21, 179, 21);
+    color: #4270A6;
+}
+.themedRadio input[type=checkbox] ~ label:before{
+    display: inline-block;
+    content: "";
+    height: 25px;
+    margin-right: 8px;
+    width: 25px;
+    background: #ddd;
+}
+.themedRadio input[type=checkbox]:checked ~ label:before{
+    background: rgb(21, 179, 21);
+    color: #4270A6;
+}
+.themedRadio input[type=checkbox] ~ label:before{
+    background: rgb(236, 101, 99);
+}
+.themedRadio input[type=checkbox] ~ label{
+    color: #aaa;
+}
+.themedRadio input[type=checkbox]:checked ~ label{
+    color: black;
+}
+#message{
+    font-size: 1.3rem;
+}
+#searchInput{
+    font-size: 1.4rem;
+}
+.hideAfterIcon:after{
+    display: none;
+}
+.followersTable tbody tr .blockContent{
+    display: none;
+}
+.followersTable tbody tr.block .dropdown{
+    display: none;
+}
+.followersTable tbody tr.block .blockContent{
+    display: inline-block;
+}
+.followersTable tbody tr.block{
+    background: rgb(236, 101, 99);
+    color: white;
+}
+
+
+@media screen and (min-width: 992px) {
+    .mainTab{
+        min-width: 800px
+    }
+    .mainTab ul > .nav-item .nav-link{
+       min-width: 250px
+    }
+}
+@media screen and (max-width: 992px) {
+    .mainTab{
+        width: 100%;
+    }
+    .mainTab .nav{
+        width: 100%;
+    }
+   
+}

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang='en'>
+<head>
+   <meta charset='utf-8'>
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Task</title>
+</head>
+<body>
+   <div class="w-100">
+      <header class="w-100 d-flex justify-content-between">
+         <div class="logoImg imgWrapper">
+            <img src="images/logo.jpg" alt="home"/>
+         </div>
+      </header>
+   </div>
+
+   <div class="">
+      <!-- As a link -->
+      <nav class="navbar secondaryHeader navbar-expand-lg bg-primary-custom">
+         <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fa fa-bars text-white" aria-hidden="true"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Dubai <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Followers</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+
+
+   <main class="d-block">
+      <div class="d-flex justify-content-center align-items-center py-5">
+
+         <div class="mainTab">
+            <!-- tabs -->
+            <!-- Bootstrap CSS -->
+            <!-- Nav tabs -->
+
+            <div class="d-flex align-items-center justify-content-center">
+               <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item"> 
+                     <a class="nav-link active py-3 px-md-5" href="#postAN" role="tab" data-toggle="tab">Post a Notice</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link py-3 px-md-5" href="#groups" role="tab" data-toggle="tab">Groups</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link py-3 px-md-5" href="#followers" role="tab" data-toggle="tab">Followers</a>
+                  </li>
+               </ul>
+            </div>
+   
+            <!-- Tab panes -->
+            <div class="tab-content">
+               <div role="tabpanel" class="tab-pane show fade in active" id="postAN">
+                  <form action="" class="postForm">
+                     <!-- Post a notice -->
+                     <div class="px-2 px-md-0">
+                        <div class="mb-3">
+                           <div >
+                              <h5 class="text-primary-custom-light">Recepitents</h5>
+                           </div>
+                        </div>
+                        <div class="radioButtonsWrapper d-flex justify-content-around align-items-center">
+                           <div class="themedRadio">
+                              <input type="radio" data-showHidden="true" id="radioSpecificFollowers" name="recepitents" value="specificFollowers">
+                              <label for="radioSpecificFollowers">Post to specific follower group/s</label>
+                           </div>
+                           <div class="themedRadio">
+                              <input type="radio" id="radioAllFollowers"  name="recepitents" value="allFollowers">
+                              <label for="radioAllFollowers">Post to all followers</label>
+                           </div>
+                        </div>
+
+                        <div class="subMenu py-3">
+                           <div class="container toggleById" style="display:none" data-target="radioSpecificFollowers">
+                              <div class="row">
+                                 <div class="col-sm-6">
+                                    <div class="themedRadio">
+                                       <input type="checkbox" id="checkboxSmallphone"  name="selectedRecepitents" value="checkboxSmallphone">
+                                       <label for="checkboxSmallphone">Small phone and tablets</label>
+                                    </div> 
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="themedRadio">
+                                       <input type="checkbox" id="checkboxmobileAcc"  name="selectedRecepitents" value="checkboxmobileAcc">
+                                       <label for="checkboxmobileAcc">Mobile Acceessories</label>
+                                    </div> 
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="themedRadio">
+                                       <input type="checkbox" id="checkboxtv"  name="selectedRecepitents" value="tv">
+                                       <label for="checkboxtv">Television</label>
+                                    </div> 
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="themedRadio">
+                                       <input type="checkbox" id="checkboxSmartPhone"  name="selectedRecepitents" value="smartPhone">
+                                       <label for="checkboxSmartPhone">Smart phone</label>
+                                    </div> 
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="themedRadio">
+                                       <input type="checkbox" id="checkboxmobileAccb"  name="selectedRecepitents" value="checkboxmobileAccb">
+                                       <label for="checkboxmobileAccb">Acceessories</label>
+                                    </div> 
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <div class="themedRadio">
+                                       <input type="checkbox" id="checkboxtv2"  name="selectedRecepitents" value="tv">
+                                       <label for="checkboxtv2">Television</label>
+                                    </div> 
+                                 </div>
+                                    
+
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="mt-3">
+                           <div class="form-group">
+                              <textarea class="form-control" id="message" name="message" rows="10"></textarea>
+                           </div>
+                        </div>
+
+                        <div>
+                           <button type="submit" class="btn btn-block bg-primary-custom">Post</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div role="tabpanel" class="tab-pane fade" id="groups">
+                  Groups view
+               </div>
+               <div role="tabpanel" class="tab-pane fade" id="followers">
+                  <div class="mt-4">
+                     <div class="tab-content-wrapper">
+                        <div class="form-group row">
+                           <div class="col-12">
+                              <input class="form-control" type="search" value="" placeholder="Search" id="searchInput">
+                           </div>
+                        </div>
+
+                        <div class="followersListWrapper">
+                           <table class="table table-hover followersTable searchEffector">
+                              <thead class="bg-primary-custom">
+                                 <tr>
+                                    <th>Follower</th>
+                                    <th>Section</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr data-search="asm global">
+                                    <th scope="row">ASM global</th>
+                                    <td>3 section</td>
+                                    <td>2 March 19</td>
+                                    <td class="text-center">
+                                       <div class="dropdown">
+                                          <button class="btn bg-primary-custom dropdown-toggle hideAfterIcon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                             <a class="dropdown-item" href="#">JazzChat</a>
+                                             <a class="dropdown-item" href="#">JazzMail</a>
+                                             <a class="dropdown-item makeBlockContent" href="#">Block</a>
+                                             <a class="dropdown-item" href="#">Delete</a>
+                                             <a class="dropdown-item" href="#">Add to group</a>
+                                          </div>
+                                       </div>
+
+                                       <div class="blockContent">
+                                          <button class="btn clr-warn-custom">
+                                             Unblock
+                                          </button>
+                                       </div>
+                                    </td>
+                                 </tr>
+
+                                 <tr data-search="saurq al hadid museum">
+                                    <th scope="row">saurq al hadid museum</th>
+                                    <td>5 sections</td>
+                                    <td>1 March 19</td>
+                                    <td class="text-center">
+                                       <div class="dropdown">
+                                          <button class="btn bg-primary-custom dropdown-toggle hideAfterIcon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                             <a class="dropdown-item" href="#">JazzChat</a>
+                                             <a class="dropdown-item" href="#">JazzMail</a>
+                                             <a class="dropdown-item makeBlockContent" href="#">Block</a>
+                                          </div>
+                                       </div>
+
+                                       <div class="blockContent">
+                                          <button class="btn clr-warn-custom">
+                                             Unblock
+                                          </button>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr data-search="armani Amal Resturant">
+                                    <th scope="row">Armani Amal Resturant</th>
+                                    <td>6 section</td>
+                                    <td>28 Feb 19</td>
+                                    <td class="text-center">
+                                       <div class="dropdown">
+                                          <button class="btn bg-primary-custom dropdown-toggle hideAfterIcon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                          </button>
+                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                             <a class="dropdown-item" href="#">JazzChat</a>
+                                             <a class="dropdown-item" href="#">JazzMail</a>
+                                             <a class="dropdown-item makeBlockContent" href="#">Block</a>
+                                          </div>
+                                       </div>
+                                       <div class="blockContent">
+                                          <button class="btn clr-warn-custom">
+                                             Unblock
+                                          </button>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+   </main>
+
+
+
+   <footer class="py-3 bg-primary-custom mt-5">
+      <div class="position-relative">
+         <div class="footer-image imgWrapper">
+               <img src="images/logo.jpg" alt="footerImage"/>
+         </div>
+      </div>
+   </footer>
+
+    
+    <!-- Groups Modal -->
+    <div class="modal fade" id="groupsBTModal" tabindex="-1" role="dialog" aria-labelledby="groupsModel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="">
+                        <h6>
+                           Section Group
+                        </h6>
+                     </div>
+                     <div class>
+                        <ul class="list-group list-group-flush">
+                           <li class="list-group-item">smart phone and tablets</li>
+                           <li class="list-group-item">Televisions</li>
+                           <li class="list-group-item">Smart phone and tablets</li>
+                           <li class="list-group-item">Mobile Accessories</li>
+                           <li class="list-group-item">Smart Phone and tablets</li>
+                           <li class="list-group-item">Mobile Accessories</li>
+                           <li class="list-group-item">Televisions</li>
+                        </ul>
+
+                     </div>
+
+                  </div>
+                  <div class="col-md-6">
+                     <div>
+                        <h6>
+                           Followers Group
+                        </h6>
+                     </div>
+                     <div class>
+                           <ul class="list-group list-group-flush">
+                              <li class="list-group-item">pre sale group</li>
+                              <li class="list-group-item">cocktail invitees</li>
+                              <li class="list-group-item">arabic men clothing</li>
+                              <li class="list-group-item">Arabic women perfumes</li>
+                           </ul>
+   
+                        </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn bg-primary-custom btn-block" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
